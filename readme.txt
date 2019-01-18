@@ -1,7 +1,2 @@
-tests
-
-modificat
-
-modificare 2
-
-modificare 3
+update c:\partitions.dat
+delete undo.bat
