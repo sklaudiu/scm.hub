@@ -1,1 +1,218 @@
 @import 'node_modules/bootstrap/dist/css/bootstrap.css';
+* {
+    box-sizing: border-box;
+  }
+
+body{
+    
+     font-family: sans-serif;
+     color: #000000;
+
+   }
+
+   a:hover{
+    text-decoration: none;
+   }
+    /* Create three equal columns that floats next to each other */
+    .column {
+    float: left;
+    padding: 15px;
+    text-align: justify;
+    text-justify: inter-word;
+    overflow:auto;
+    }
+
+    .column.side {
+        width: 25%;
+      }
+      
+      /* Middle column */
+      .column.middle {
+        width: 50%;
+        background-color: rgba(232, 255, 27, 3px);
+      }
+  
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+   #openMenu{
+       font-size: 1em;
+       font-weight: 800;
+       cursor: pointer;
+       text-align: center;
+       transition: all 0.5s;
+       z-index: 111;
+       transition: all 0.25s;
+       -moz-transition: all 0.25s;
+       -webkit-transition: all 0.25s;
+       color: #00936E;
+
+   }
+
+   #header{
+        display: grid;
+        grid-template-columns: 3% 95%;
+        grid-gap: 10px;
+        background-color: #ffffff;
+        padding-bottom: 20px;
+        padding-top:20px;
+        padding-left: 20px;
+        
+        
+   }
+
+   #header > div {
+    font-size: 30px;
+  }
+
+   #logo{
+       color: #00936E;
+       font-family: 'Pacifico', cursive;
+       text-align: left;
+       padding-left: 10px;
+   }
+   
+   #openMenu:hover{
+       transform: rotate(90deg);
+       color:#FF9900;
+   }
+   
+   #lgMenu ul{
+       list-style: none;
+       padding: 0;
+       background-color: white;
+   }
+   
+   #lgMenu li{
+       text-align: center;
+       text-transform: uppercase;
+       margin-bottom: 5px;
+       border-left: solid 2px;
+       border-color: greenyellow;
+       color: white;
+       cursor: pointer;
+       background-color: #00936E;
+       font-size: 1em;
+       letter-spacing: 0.2em;
+       transition: all 0.25s;
+       
+   }
+   
+   #lgMenu li:hover, #horizontalMenu li:hover{
+       background-color: white;
+       color:#FF9900;
+       border: solid 1px #00936E;
+       box-shadow: 5px 3px 10px 1px #FF9900;
+       -webkit-box-shadow: 5px 3px 10px 1px #FF9900;
+       -moz-box-shadow: 5px 3px 10px 1px #FF9900;
+       
+   }
+   
+   #lgMenu{
+       display: block;
+       width: 250px;
+       height: 100%;
+       top: 0;
+       left: -400px;
+       overflow:hidden;
+       background-color:#ffffff;
+       border: solid #ffffff;
+       box-shadow: 5px 3px 10px 1px grey;
+       position: fixed;
+       z-index: 130;
+       transition: all 2s;
+       -webkit-transition: all 1s;
+       -moz-transition: all 1s;
+   }
+   
+   #exit{
+       position: relative;
+       text-align: right;
+       display: block;
+       padding: 0px;
+       font-size: 2em;
+       color: rgb(255, 0, 0);
+       background-color: #ffffff;
+       font-weight: 500;
+       cursor: pointer;
+       transition: all 0.25s;
+       -webkit-transition: all 0.25s;
+       -moz-transition: all 0.25s;
+   }
+   #exit:hover{
+       color:#FF9900;
+   }
+   
+   #lgMenu.enter{
+       opacity: 1;
+       left: 0;
+   }
+
+   #horizontalBar{
+    text-align: center;
+    border: solid 1px #00936E;
+    border-right: none;
+    border-left: none;
+    position: relative;
+    background-color: #ffffff;
+    margin:0px 0px 20px 0px;
+    
+}
+
+#horizontalMenu{
+ padding: 0;
+ top: 0px;
+ text-align: center;
+ position: relative;    
+ }
+
+ #horizontalMenu ul{
+     list-style: none; display: inline;
+ }
+
+#horizontalMenu li{
+    background: #ffffff;
+    border: solid 1px #00936E;
+    border-radius: 9px;
+    text-align: center;
+    text-transform: uppercase;
+    display: inline;
+    margin: 10px;
+    padding: 7px;
+    color: #00936E;
+    cursor: pointer;
+    font-size: 1em;
+    letter-spacing: 0.2em;
+    transition: all 0.25s;
+    box-shadow: 5px 3px 10px 1px #00936E;
+    -webkit-box-shadow: 5px 3px 10px 1px #00936E;
+    -moz-box-shadow: 5px 3px 10px 1px #00936E;
+}
+
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    transition: all 0.25s;
+  }
+
+  @media all and (max-width: 600px) {
+    #horizontalMenu li{ display: block; }
+    #horizontalBar {position: relative; }
+    #horizontalMenu ul{ position: relative;list-style: none;}
+    ul{padding:0px;}
+    .column.side{width: 0%;}
+    .column.middle{width: 90%;}
+  }

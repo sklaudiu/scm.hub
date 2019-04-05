@@ -2,20 +2,19 @@ function showMenu(){
        $("#openMenu").css("opacity", "0");
        $(".modal").css("display", "block");
         $("#lgMenu").addClass("enter");
-        /*$("#horizontalMenu").hide();*/
+        $("#horizontalMenu").hide();
     }
 function hideMenu() {
            $("#lgMenu").removeClass("enter");
             $("#openMenu").css("opacity", "1");
             $(".modal").css("display", "none");
-            /*$("#horizontalMenu").show();*/
+            $("#horizontalMenu").show();
         }
 
 
 function setHBarFixed() {
     
-    if ($(window).scrollTop() > $("#horizontalBar").scrollTop() 
-        && window.screen.availWidth <= 600) {
+    if ($(window).scrollTop() > $("#horizontalBar").scrollTop()) {
 
         $("#horizontalBar").css('position','fixed');
         $("#horizontalBar").css('top','5px');
@@ -25,5 +24,9 @@ function setHBarFixed() {
     }
 }
 
+
+function myFunc() {
+    alert('text');
+}
 
 window.onscroll = function() {setHBarFixed()};
