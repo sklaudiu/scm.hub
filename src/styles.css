@@ -31,7 +31,7 @@ body{
         width: 50%;
         background-color: rgba(232, 255, 27, 3px);
       }
-  
+
     /* Clear floats after the columns */
     .row:after {
         content: "";
@@ -216,3 +216,4 @@ body{
     .column.side{width: 0%;}
     .column.middle{width: 90%;}
   }
+
