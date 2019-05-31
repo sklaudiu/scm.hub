@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+</head>
+
+<body onload="showHeight();" onresize="showHeight()">
+
+  <a href="#showmenu" style="text-decoration:none; background-color: red;" onclick="showMenu();">
+    <div id="menuSign" style="position: fixed; z-index: 98; right: 1%; ">
+
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+
+    </div>
+  </a>
+
+
+  <div id="menuBar">
+    <a id="closeMenu" href="#exit" onclick="hideMenu()">
+    <div id="x" style="margin-left: 170px;right: 0;background-color:rgb(190, 87, 87); width: 30px; height: 20px;">
+        X
+    </div> </a>
+    <div class="menuItem"><a href="#timeLeft">Cat timp mai avem?</a></div>
+    <div class="menuItem"> <a href="#invitePresentation">Prezentare gazde</a></div>
+    <div class="menuItem"> <a href="#eventList">Locatie</a></div>
+    <div class="menuItem"> <a href="#subscribeToEvent">Confirmare</a></div>
+  </div>
+
+  <div id="content">
+
+
+    <div id="timeLeft" style="text-align: center; ">
+      <div
+        style="text-align: left; padding: 30px; color: #ffffff; font-family: Pintagram; font-size: 2em; position: absolute;">
+        Text
+      </div>
+
+
+      <div class="eventName" style="padding-top: 100px;">
+        Text principal
+      </div>
+
+
+      <div class="roundBadge">
+        <div class="counterUnitFontSize" id="days">_</div>
+        <div class="timeunittag">ZILE</div>
+      </div>
+
+      <div class="roundBadge">
+        <div class="counterUnitFontSize" id="hours">_</div>
+        <div class="timeunittag">ORE</div>
+      </div>
+
+      <div class="roundBadge">
+        <div class="counterUnitFontSize" id="minutes">_</div>
+        <div class="timeunittag">MINUTE</div>
+      </div>
+
+      <div class="roundBadge">
+        <div class="counterUnitFontSize" id="seconds">_</div>
+        <div class="timeunittag">SECUNDE</div>
+      </div>
+      <br>
+      <a href="#invitePresentation">
+        <div class="roundBadge"
+          style="width: 10px; text-align: center; background-color: white; color: rgb(238, 16, 16)">
+          &#8659;
+
+        </div>
+      </a>
+
+    </div>
+
+
+    <div id="invitePresentation" style="text-align: center;">
+      <div class="eventName eventPurposeName">
+        Text principal
+      </div>
+
+      <div style="color: black; font-family: Arial, Helvetica, sans-serif; font-size: 1em;">
+        What are we doing
+      </div>
+      <br>
+      <div style="color: rgb(158, 154, 154); font-family: Arial, Helvetica, sans-serif; font-size: 1em;">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua
+      </div>
+
+      <img src="/src/assets/images/male.png" style="text-align: center;">
+
+      <div class="eventName"
+        style="color: rgb(238, 16, 16); padding-top: 0px; margin: 0px; font-family: Pintagram; font-size: 1em;">
+        Nume personaj
+      </div>
+
+
+      <div style="color: rgb(158, 154, 154); font-family: Arial, Helvetica, sans-serif; font-size: 1em;">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua
+      </div>
+      <br>
+
+      <img src="/src/assets/images/female.png" style="text-align: center; padding-top: 10px;">
+
+      <div class="eventName"
+        style="color: rgb(238, 16, 16); padding-top: 0px; margin: 0px; font-family: Pintagram; font-size: 1em;">
+        Nume personaj
+      </div>
+
+
+      <div style="color: rgb(158, 154, 154); font-family: Arial, Helvetica, sans-serif; font-size: 1em;">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua
+      </div>
+
+      <img src="/src/assets/images/male.png" style="text-align: center; padding-top: 10px;">
+
+      <div class="eventName"
+        style="color: rgb(238, 16, 16); padding-top: 0px; margin: 0px; font-family: Pintagram; font-size: 1em;">
+        Nume personaj
+      </div>
+
+
+      <div style="color: rgb(158, 154, 154); font-family: Arial, Helvetica, sans-serif; font-size: 1em;">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua
+      </div>
+
+      <div
+        style="color: rgb(158, 154, 154); font-family: Arial, Helvetica, sans-serif; font-size: 1.4em; padding-top: 5px;">
+        Together with
+      </div>
+
+      <div style="color: black; font-family: Arial, Helvetica, sans-serif; font-size: 1.4em; padding-bottom: 40px;">
+        Other people
+      </div>
+
+      <div id="locationDescription" style="text-align: center;  position: relative; padding-top: 20px;">
+
+        <div class="eventName"
+          style=" color: rgb(238, 16, 16); padding-top: 0px; margin: 0px; font-family: Pintagram; font-size: 1.3em; ">
+          <span style="text-shadow: 3px 3px #FFFFFF;">MOMENTELE NOASTRE SPECIALE</span>
+          <br>
+          Evenimente
+        </div>
+
+        <div id="eventList" style="display: inline-block; width: 75%; height: 98%;">
+
+          <div
+            style="border-color: #ffffff; border-radius: 5px 5px 5px 5px; box-shadow: 5px 5px 1px rgba(255, 255, 255, 0.2); font-family: Signatura Monoline; font-size: 2em; color: #857c7c; font-weight: bold; padding-top: 10px; width: 100%; height: 40%; background-color: rgba(255, 255, 255, 0.5); border: solid 1px;">
+            <span style="border-bottom: solid 1px;">Main event</span>
+            <div style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">Location1</div>
+            <div id="timeDate">
+              <div>
+                <span id="date" style="padding-right:90px;">📅</span>
+                <span id="time">🕛</span>
+              </div>
+              <div>
+                <span id="dateValue" style="padding-left: 15px;padding-right:30px;">24.08.2019</span>
+                <span id="timeValue">12:00 - 14:00</span>
+              </div>
+            </div>
+            <div style="display: inline-block;border-style: solid;border-width: 1px; border-color: #000000;width:100%; height: 70%; padding-top:5px;
+            box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.2);">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.612906546476!2d26.093712315311667!3d44.44110200914253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff409bd2d6d9%3A0x24e1439c27394d92!2sAth%C3%A9n%C3%A9e+Palace+Hilton+Bucharest!5e0!3m2!1sro!2sro!4v1559203417463!5m2!1sro!2sro"
+                width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+          </div>
+          <br>
+          <div
+            style="border-color: #ffffff; border-radius: 5px 5px 5px 5px; box-shadow: 5px 5px 1px rgba(255, 255, 255, 0.2); font-family: Signatura Monoline; font-size: 2em; color: #857c7c; font-weight: bold; padding-top: 10px; width: 100%; height: 40%; background-color: rgba(255, 255, 255, 0.5); border: solid 1px;">
+            <span style="border-bottom: solid 1px;">Party</span>
+            <div style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">Locatie2</div>
+            <div>
+              <span id="date" style="padding-left:35px;padding-right:125px;">📅</span>
+              <span id="time" style="padding-right:80px;">🕓</span>
+            </div>
+            <div>
+              <span id="dateValue" style="padding-right:50px;">24.08.2019</span>
+              <span id="timeValue" style="width: 10px;word-wrap: break-word;">16:00 - fara limita</span>
+            </div>
+
+            <div style="display: inline-block;border-style: solid;border-width: 1px; border-color: #000000; width:100%; height: 70%;padding-top:5px;
+            box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.2);">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.612906546476!2d26.093712315311667!3d44.44110200914253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff409bd2d6d9%3A0x24e1439c27394d92!2sAth%C3%A9n%C3%A9e+Palace+Hilton+Bucharest!5e0!3m2!1sro!2sro!4v1559203417463!5m2!1sro!2sro"
+                width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+          </div>
+
+
+
+        </div>
+        <div id="purpose">
+
+        </div>
+
+      </div>
+      <!--end location description-->
+
+
+      <div id="subscribeToEvent"
+        style="position: relative; display: block; text-align: center;  position: relative; padding-top: 20px;">
+        <div class="eventName eventPurposeName">
+          Subscribe
+        </div>
+
+        <div
+          style="color: rgb(158, 154, 154); font-family: Arial, Helvetica, sans-serif; font-size: 1em;padding-bottom: 20px;">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua
+          <div id="noOfPersons">
+            
+              <select class="custom-select">
+                  Alege numar persoane
+                <option id="0" value="0">Alege numar persoane</option>
+                <option id="1" value="1">1</option>
+                <option id="2" value="2">2</option>
+                <option id="3" value="3">3</option>
+                <option id="4" value="4">4</option>
+                <option id="5" value="5">5</option>
+                <option id="6" value="6">6</option>
+                <option id="7" value="7">7</option>
+                <option id="8" value="8">8</option>
+                <option id="9" value="999">Mai multe</option>
+              </select>
+            <div style="width: 15%;"></div>
+          </div>
+        </div>
+
+
+
+        <div style="display: inline-block; ">
+
+          <textarea id="mentions" style="border-color: crimsom; width:400px; height:300px;"
+            placeholder=" Vrei sa ne transmiti ceva"></textarea>
+        </div>
+        <br><br>
+        <div id="confirmParticipationBtn">
+          <button
+            style="width: 150px; height: 30px; color: #ffffff; background-color: rgb(238, 16, 101); border-radius: 10px ;border-color: rgb(238, 16, 101);">Da,
+            confirm prezenta</button>
+        </div>
+        <br>
+        <div id="rejectParticipationBtn">
+          <button
+            style="width: 150px; height: 30px; color: #ffffff;background-color: #000000;border-radius: 10px; border-color: #49484828;">Nu
+            pot sa particip</button>
+        </div>
+
+        <!--start footer-->
+        <div id="footerEvent">
+          Yo &#9825; Yo
+          <div style="font-family:'Courier New', Courier, monospace; font-size: 0.3em;">Multumim!</div>
+        </div>
+        <!--end footer-->
+
+      </div>
+      <!--end subscribe to event-->
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+  </div>
+
+
+
+
+
+</body>
+
+</html>
