@@ -19,10 +19,16 @@
         // If user clicks inside the element, do nothing
         if (!event.target.closest("#menuBar") ) return;
         else hideMenu();
-    
+
+        
+        
+        
+
         // If user clicks outside the element, hide it!
        // 
     });
+
+    
 
   function showHeight() {
     document.getElementById("timeLeft").style.height = window.innerHeight + "px";
@@ -30,6 +36,7 @@
     document.getElementById("locationDescription").style.height =(window.innerHeight*2+50) + "px";
     document.getElementById("subscribeToEvent").style.height =(window.innerHeight) + "px";
     document.getElementById("footerEvent").style.height =(window.innerHeight/5) + "px";
+    document.getElementById("footerEvent").style.width =(window.innerWidth-40) + "px";
 
     }
 
@@ -47,7 +54,21 @@
 }
 
 
+function setPersons(nrPers){
+    document.getElementById("noOfSelPers").value=nrPers;
 
+    for(i = 0; i < document.getElementsByClassName("dropdown-content").length; i++){
+        document.getElementsByClassName("dropdown-content")[i].style.display = "none";
+    }
+    
+}
+
+function showPersons(){
+    for(i = 0; i < document.getElementsByClassName("dropdown-content").length; i++){
+        document.getElementsByClassName("dropdown-content")[i].style.display = "block";
+        
+    }
+}
 
 
 

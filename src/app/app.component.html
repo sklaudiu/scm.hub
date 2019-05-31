@@ -150,24 +150,29 @@
 
         <div id="eventList" style="display: inline-block; width: 75%; height: 98%;">
 
-          <div
-            style="display: block;
+          <div style="display: block;
              border-color: #ffffff;
              border-radius: 5px 5px 5px 5px; 
-             box-shadow: 5px 5px 1px rgba(255, 255, 255, 0.2); 
+             box-shadow: 5px 5px 1px rgb(146, 144, 144); 
              font-family: Signatura Monoline; 
-             font-size: 2em; color: #857c7c; 
+             font-size: 2em; color: #c76161; 
              font-weight: bold; padding-top: 10px; 
              width: 100%; height: 50%; 
              background-color: rgba(255, 255, 255, 0.5); 
              border: solid 1px;
-             padding-bottom: 10px;"
-             >
-            <div style="border-bottom: solid 1px;">Main event</div>
-            <div style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">Location1</div>
+             padding-bottom: 10px;">
+            <div style="solid:1px;">Main event</div>
+            <div style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
+              Location1 <br>
+              <span><a href="#loc2" 
+                style="font-size: 0.5em; color: inherit;text-decoration: none;">
+                  (Nu uita de petrecere &#8659;)
+                </a>
+              </span>
+            </div>
             <div id="timeDate">
               <div>
-                <span id="date" style="padding-right:90px;">📅</span>
+                <span id="date" style="padding-right:90px;">🗓</span>
                 <span id="time">🕛</span>
               </div>
               <div>
@@ -175,33 +180,33 @@
                 <span id="timeValue">12:00 - 14:00</span>
               </div>
             </div>
-            <div style="display: inline-block;border-style: solid;border-width: 1px; border-color: #000000;width:100%; height: 70%; padding-top:5px;
+            <div style="display: inline-block;width:100%; height: 70%; padding-top:5px;
               box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.2);">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.612906546476!2d26.093712315311667!3d44.44110200914253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff409bd2d6d9%3A0x24e1439c27394d92!2sAth%C3%A9n%C3%A9e+Palace+Hilton+Bucharest!5e0!3m2!1sro!2sro!4v1559203417463!5m2!1sro!2sro"
-                width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
+                width="100%" height="70%" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div><button id="navigate">Navigheaza</button></div>
+            
           </div>
-
-          <div
-            style=" display: block;
+            
+          </div>
+          <div><br></div>
+          <div id="loc2" style=" display: block;
                     border-color: #ffffff; 
                     border-radius: 5px 5px 5px 5px; 
-                    box-shadow: 5px 5px 1px 
-                  rgba(255, 255, 255, 0.2); 
+                    box-shadow: 5px 5px 1px rgb(146, 144, 144); 
                     font-family: Signatura Monoline;
                     font-size: 2em; 
-                    color: #857c7c; 
+                    color: #c76161; 
                     font-weight: bold; 
                     padding-top: 10px; 
                     width: 100%; height: 40%; 
                     background-color: rgba(255, 255, 255, 0.5); 
-                    border: solid 1px;"
-                    >
+                    border: solid 1px;">
             <div style="border-bottom: solid 1px;">Party</div>
             <div style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">Locatie2</div>
             <div>
-              <span id="date" style="padding-left:35px;padding-right:125px;">📅</span>
+              <span id="date" style="padding-left:35px;padding-right:125px;">🗓</span>
               <span id="time" style="padding-right:80px;">🕓</span>
             </div>
             <div>
@@ -209,12 +214,14 @@
               <span id="timeValue" style="width: 10px;word-wrap: break-word;">16:00 - fara limita</span>
             </div>
 
-            <div style="display: inline-block;border-style: solid;border-width: 1px; border-color: #000000; width:100%; height: 60%;padding-top:5px;
+            <div style="display: inline-block;border-style: solid;border-width: 1px; border-color: #000000; width:100%; height: 45%;
               box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.2);">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.612906546476!2d26.093712315311667!3d44.44110200914253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff409bd2d6d9%3A0x24e1439c27394d92!2sAth%C3%A9n%C3%A9e+Palace+Hilton+Bucharest!5e0!3m2!1sro!2sro!4v1559203417463!5m2!1sro!2sro"
-                width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
+                width="100%" height="85%" frameborder="0" style="border:0" allowfullscreen></iframe>
+            
+          </div>
+            <button>Navigheaza</button>
           </div>
 
 
@@ -228,39 +235,48 @@
       <!--end location description-->
 
 
-      <div id="subscribeToEvent"
-        style="position: relative; display: block; text-align: center;  position: relative; padding-top: 100px;">
+      <div id="subscribeToEvent" style="text-align: center;  padding-top: 100px;">
         <div class="eventName eventPurposeName">
           Subscribe
         </div>
 
-        <div
-          style="color: rgb(158, 154, 154); font-family: Arial, Helvetica, sans-serif; font-size: 1em;padding-bottom: 20px;">
+        <div style="color: rgb(158, 154, 154); 
+          font-family: Arial, Helvetica, sans-serif; 
+          font-size: 1em;
+          padding-bottom: 20px;">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua
 
-          <div id="noOfPersons" style="width: 50%; display: inline-block;">
-            <label for="persSelect">Alege numar persoane</label> &nbsp;
-            <select id="persSelect" class="custom-select">
 
-              <option id="0" value="0">Alege numar persoane</option>
-              <option id="1" value="1">1</option>
-              <option id="2" value="2">2</option>
-              <option id="3" value="3">3</option>
-              <option id="4" value="4">4</option>
-              <option id="5" value="5">5</option>
-              <option id="6" value="6">6</option>
-              <option id="7" value="7">7</option>
-              <option id="8" value="8">8</option>
-              <option id="9" value="999">Mai multe</option>
-            </select>
-            <div style="width: 15%;"></div>
+          <div>
+            <br>
+
+            <div class="dropdown">
+
+              <button class="dropbtn" onclick="showPersons();">Numar de persoane</button>
+              <div class="dropdown-content">
+                <a href="#1" onclick="setPersons(1)">1</a>
+                <a href="#2" onclick="setPersons(2)">2</a>
+                <a href="#3" onclick="setPersons(3)">3</a>
+                <a href="#4" onclick="setPersons(4)">4</a>
+                <a href="#5" onclick="setPersons(5)">5</a>
+                <a href="#6" onclick="setPersons(6)">6</a>
+                <a href="#7" onclick="setPersons(7)">7</a>
+                <a href="#8" onclick="setPersons(8)">8</a>
+              </div>
+            </div>
+            <br>
+            <input id="noOfSelPers" type="text" disabled style="padding: 10px; text-align: center; width: 10px;"
+              value=0>
+
           </div>
+
+
+
         </div>
 
 
-
-        <div style="display: inline-block; ">
+        <div style="display: block; position: relative;">
 
           <textarea id="mentions" style="border-color: crimsom; width:400px; height:300px;"
             placeholder=" Vrei sa ne transmiti ceva"></textarea>
@@ -268,13 +284,13 @@
         <br><br>
         <div id="confirmParticipationBtn">
           <button
-            style="width: 150px; height: 30px; color: #ffffff; background-color: rgb(238, 16, 101); border-radius: 10px ;border-color: rgb(238, 16, 101);">Da,
+            style="outline:none; width: 150px; height: 30px; color: #ffffff; background-color: rgb(238, 16, 101); border-radius: 10px ;border-color: rgb(238, 16, 101);">Da,
             confirm prezenta</button>
         </div>
         <br>
         <div id="rejectParticipationBtn">
           <button
-            style="width: 150px; height: 30px; color: #ffffff;background-color: #000000;border-radius: 10px; border-color: #49484828;">Nu
+            style="outline:none; width: 150px; height: 30px; color: #ffffff;background-color: #000000;border-radius: 10px; border-color: #49484828;">Nu
             pot sa particip</button>
         </div>
 
