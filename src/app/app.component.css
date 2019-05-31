@@ -4,16 +4,8 @@ body{
 }
 
 select {
-  -webkit-appearance: none;
-    -moz-appearance: none;
-    -o-appearance: none;
-    appearance: none;
-  border:0px;
-  appearance: none;
-    background-image: none;
-    background-position: 98% center;
-    background-repeat: no-repeat;
-    outline: none;
+  border-radius: 5px 5px 5px 5px ;
+ 
 }
 
 option, select{
@@ -63,7 +55,7 @@ option, select{
   padding-left: 5px;
   padding-top:7px;
   height: 30px;
-  border-bottom: solid 1px;
+  border-bottom: solid 1px #FFFFFF;
   padding-right: 7px;
 }
 

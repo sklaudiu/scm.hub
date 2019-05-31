@@ -27,7 +27,7 @@
   function showHeight() {
     document.getElementById("timeLeft").style.height = window.innerHeight + "px";
     document.getElementById("invitePresentation").style.height = window.innerHeight + "px";
-    document.getElementById("locationDescription").style.height =(window.innerHeight*2) + "px";
+    document.getElementById("locationDescription").style.height =(window.innerHeight*2+50) + "px";
     document.getElementById("subscribeToEvent").style.height =(window.innerHeight) + "px";
     document.getElementById("footerEvent").style.height =(window.innerHeight/5) + "px";
 
