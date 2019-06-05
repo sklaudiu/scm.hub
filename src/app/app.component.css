@@ -9,7 +9,9 @@ body{
 
 }
 
-
+.imgHost{
+  border-radius: 50%;
+}
 
 option, select{
   color:  rgb(238, 16, 16);
@@ -171,13 +173,22 @@ select{
     font-size:0.6em;
 }
 
-.eventName{
+.eventNameMain{
     display: block;
-    font-family: bresley;
-    font-size: 3em;
-    font-style: bold;
+    font-family: Galea;
+    font-size: 2em;
+
     color: rgba(252, 8, 101, 0.5);
-    padding-top: 20px;
+    
+}
+
+.eventName{
+  display: block;
+  font-family: Demo_ConeriaScript;
+  font-size: 1em;
+
+  color: rgba(252, 8, 101, 0.5);
+  
 }
 
 
@@ -186,6 +197,7 @@ select{
     font-weight: bold;
     color: rgb(248, 66, 127);
     font-family: Pintagram;
+    font-size: 2em;
 }
 
 
@@ -194,9 +206,9 @@ select{
 #locationDescription{
     border:none;
     background-position: bottom; 
-    background-image: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)), url(/src/assets/images/locationBg.png);
+    background-image: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)), url(/src/assets/images/locationBg.jpg);
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
 
 }
 
@@ -271,8 +283,9 @@ button:hover{
   position: relative;
   display: block;
   margin: auto;
-  background-color: rgba(255, 255, 255, 0.6);
-  color: rgb(248, 66, 127);
+  background: none;
+  /*background-color: rgba(255, 255, 255, 0.6);*/
+  color: rgb(255, 255, 255);
   font-size: 0.8em;
   font-family: 'Times New Roman', Times, serif;
   font-style: italic;
@@ -311,11 +324,6 @@ button:hover{
   }
 
   @font-face {
-    font-family: Alexander;
-    src: url(/src/assets/fonts/Alexander\ Lettering.ttf);
-  }
-
-  @font-face {
     font-family: Charlotte Sweet Dafont;
     src: url(/src/assets/fonts/Charlotte\ Sweet\ Dafont.otf);
   }
@@ -335,3 +343,22 @@ button:hover{
     src: url(/src/assets/fonts/Rockness.ttf);
   }
 
+@font-face {
+    font-family: Midnight_Drive;
+    src: url(/src/assets/fonts/Midnight_Drive.otf);
+  }
+  
+  @font-face {
+    font-family: AlphaKids-Regular;
+    src: url(/src/assets/fonts/AlphaKids-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: Galea;
+    src: url(/src/assets/fonts/Galea.ttf);
+  }  
+  
+  @font-face {
+    font-family: Demo_ConeriaScript;
+    src: url(/src/assets/fonts/Demo_ConeriaScript.ttf);
+  }
