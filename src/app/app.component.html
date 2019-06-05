@@ -5,14 +5,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 </head>
 
-<body onload="showHeight();" onresize="showHeight()">
+<body onload="setSize(); setCookies();acnowledgeViewedMsg();" onresize="setSize();">
 
-  <a href="#showmenu" style="text-decoration:none; background-color: red;" onclick="showMenu();">
-    <div id="menuSign" style="position: fixed; z-index: 98; right: 1%; ">
+  <a href="#showmenu" style="text-decoration:none; " onmouseover="unrotateBars();" onclick="showMenu();">
+    <div id="menuSign" style="position: fixed; z-index: 98; right: 2%; top: 20px; ">
 
-      <div class="bar1"></div>
-      <div class="bar2"></div>
-      <div class="bar3"></div>
+      <div id="bar1"></div>
+      <div id="bar2"></div>
+      <div id="bar3"></div>
 
     </div>
   </a>
@@ -20,7 +20,8 @@
 
   <div id="menuBar">
     <a id="closeMenu" href="#exit" onclick="hideMenu()">
-      <div id="x" style="margin-left: 170px;right: 0;background-color:rgb(190, 87, 87); width: 30px; height: 20px;">
+      <div id="x"
+        style="margin-left: 170px;right: 0; width: 40px; height: 30px;padding-top: 10px;">
         X
       </div>
     </a>
@@ -33,15 +34,15 @@
   <div id="content">
 
 
-    <div id="timeLeft" style="text-align: center; ">
+    <div id="timeLeft" style="text-align: center;">
       <div
-        style="text-align: left; padding: 30px; color: #ffffff; font-family: Pintagram; font-size: 2em; position: absolute;">
-        Text
+        style="text-align: left;padding:20px; margin-left: 30px; color: #ffffff; font-family: Pintagram; font-size: 1.5em; position: relative;">
+        Nunta si un Botez &#9786;
       </div>
 
 
-      <div class="eventName" style="padding-top: 100px;">
-        Text principal
+      <div class="eventName">
+        Alina & Claudiu
       </div>
 
 
@@ -78,29 +79,29 @@
 
     <div id="invitePresentation" style="text-align: center;">
       <div class="eventName eventPurposeName">
-        Text principal
+        <br>
+        Evenimentul nostru!
       </div>
 
       <div style="color: black; font-family: Arial, Helvetica, sans-serif; font-size: 1em;">
-        What are we doing
+        24 August 2019, Bucuresti
       </div>
       <br>
       <div style="color: rgb(158, 154, 154); font-family: Arial, Helvetica, sans-serif; font-size: 1em;">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua
+            Te rugam sa ne fii alaturi cand vom spune un mare "DA".
+        <br>In aceeasi zi o vom boteza pe micuta noastra, Adina - Maria.
       </div>
 
       <img src="/src/assets/images/male.png" style="text-align: center;">
 
       <div class="eventName"
         style="color: rgb(238, 16, 16); padding-top: 0px; margin: 0px; font-family: Pintagram; font-size: 1em;">
-        Nume personaj
+        Claudiu
       </div>
 
 
       <div style="color: rgb(158, 154, 154); font-family: Arial, Helvetica, sans-serif; font-size: 1em;">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua
+        Ar fi multe de spus dar incepand din aceasta zi nu va mai fi despre mine, ci despre noi. <br>Asa ca te invit cu mare drag sa petrecem impreuna si sa avem ce povesti.
       </div>
       <br>
 
@@ -108,90 +109,90 @@
 
       <div class="eventName"
         style="color: rgb(238, 16, 16); padding-top: 0px; margin: 0px; font-family: Pintagram; font-size: 1em;">
-        Nume personaj
+        Alina
       </div>
 
 
       <div style="color: rgb(158, 154, 154); font-family: Arial, Helvetica, sans-serif; font-size: 1em;">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua
+        Serioasa dar cu capul in nori, devreme acasa dar party animal. Si ghici ce .. ma marit!
       </div>
 
-      <img src="/src/assets/images/male.png" style="text-align: center; padding-top: 10px;">
+      <img src="/src/assets/images/baby.png" style="text-align: center; padding-top: 10px;">
 
       <div class="eventName"
         style="color: rgb(238, 16, 16); padding-top: 0px; margin: 0px; font-family: Pintagram; font-size: 1em;">
-        Nume personaj
+        Adina - Maria
       </div>
 
 
       <div style="color: rgb(158, 154, 154); font-family: Arial, Helvetica, sans-serif; font-size: 1em;">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua
+        Sunt o fetita super simpatica, imi plac plimbarile prin parc si sa intind mana dupa fluturasi.
+      </div>
+<br><br>
+      <div style="height: 3px; background-color:crimson;"></div>
+      <div class="eventName eventPurposeName" style="margin: 0; padding-top: 20px;padding-bottom: 0px;">
+        Impreuna cu simpaticii nostri nasi
       </div>
 
-      <div
-        style="color: rgb(158, 154, 154); font-family: Arial, Helvetica, sans-serif; font-size: 1.4em; padding-top: 5px;">
-        Together with
+      <div class="eventName" style=" color:crimson; padding:0px;">
+        Claudia & Adrian Manole
+      </div>
+      <div style="height: 3px; background-color:crimson;"></div>
+      <br>
+    </div>
+    <!--end invitePresentation-->
+
+
+    <div id="locationDescription"
+      style="text-align: center;  position: relative; padding-top: 20px; padding-bottom: 30px;">
+
+      <div class="eventName" Style="color: rgb(248, 66, 127); font-weight: bold; font-size: 2em;">
+        <span>MOMENTELE NOASTRE SPECIALE</span>
+        <br>
+        Evenimente
       </div>
 
-      <div style="color: black; font-family: Arial, Helvetica, sans-serif; font-size: 1.4em; padding-bottom: 40px;">
-        Other people
-      </div>
+      <div id="eventList" style="margin: auto; display: block; width: 75%; height: 100%;">
 
-      <div id="locationDescription" style="text-align: center;  position: relative; padding-top: 20px;">
-
-        <div class="eventName"
-          style=" color: rgb(238, 16, 16); padding-top: 0px; margin: 0px; font-family: Pintagram; font-size: 1.3em; ">
-          <span style="text-shadow: 3px 3px #FFFFFF;">MOMENTELE NOASTRE SPECIALE</span>
-          <br>
-          Evenimente
-        </div>
-
-        <div id="eventList" style="display: inline-block; width: 75%; height: 98%;">
-
-          <div style="display: block;
+        <div style="display: block;
              border-color: #ffffff;
              border-radius: 5px 5px 5px 5px; 
              box-shadow: 5px 5px 1px rgb(146, 144, 144); 
              font-family: Signatura Monoline; 
              font-size: 2em; color: #c76161; 
              font-weight: bold; padding-top: 10px; 
-             width: 100%; height: 50%; 
-             background-color: rgba(255, 255, 255, 0.5); 
+             width: 100%; height: 40%; 
+             background-color: rgba(255, 255, 255, 0.8); 
              border: solid 1px;
-             padding-bottom: 10px;">
-            <div style="solid:1px;">Main event</div>
-            <div style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
-              Location1 <br>
-              <span><a href="#loc2" 
-                style="font-size: 0.5em; color: inherit;text-decoration: none;">
-                  (Nu uita de petrecere &#8659;)
-                </a>
-              </span>
-            </div>
-            <div id="timeDate">
-              <div>
-                <span id="date" style="padding-right:90px;">🗓</span>
-                <span id="time">🕛</span>
-              </div>
-              <div>
-                <span id="dateValue" style="padding-left: 15px;padding-right:30px;">24.08.2019</span>
-                <span id="timeValue">12:00 - 14:00</span>
-              </div>
-            </div>
-            <div style="display: inline-block;width:100%; height: 70%; padding-top:5px;
-              box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.2);">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.612906546476!2d26.093712315311667!3d44.44110200914253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff409bd2d6d9%3A0x24e1439c27394d92!2sAth%C3%A9n%C3%A9e+Palace+Hilton+Bucharest!5e0!3m2!1sro!2sro!4v1559203417463!5m2!1sro!2sro"
-                width="100%" height="70%" frameborder="0" style="border:0" allowfullscreen></iframe>
-            <div><button class="navigate">Navigheaza</button></div>
-            
+             ">
+          <div>Cununia religioasa</div>
+          <div style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
+            Biserica Mihai Voda <br>
+            <a href="#loc2" style="font-size: 0.5em; color: inherit;text-decoration: none;"><span>
+                (Nu uita de petrecere &#8659;)
+              </span> </a>
           </div>
-            
+          <div id="timeDate">
+            <div>
+              <span id="date" style="padding-right:90px;">🗓</span>
+              <span id="time">🕛</span>
+            </div>
+            <div>
+              <span id="dateValue" style="padding-right:65px;">24.08.2019</span>
+              <span id="timeValue" style="padding-right:35px;">12:00</span>
+            </div>
           </div>
-          <div><br></div>
-          <div id="loc2" style=" display: block;
+          <div style=" display: inline-block;width:100%; height: 60%; padding-top:5px;">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2849.077801265878!2d26.091065615897183!3d44.43156627910242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff6a0abb20e7%3A0xa4ca98e39dc3d9fe!2sBiserica+Mihai+Vod%C4%83!5e0!3m2!1sro!2sro!4v1559376529533!5m2!1sro!2sro"
+              width="90%" height="60%" frameborder="0" style="border: solid 1px black;" allowfullscreen></iframe>
+            <div><button onclick="window.open('https://goo.gl/maps/N8fbexS1JxEkoj4o8', '_blank');" class="navigate">Navigheaza</button><br></div>
+
+          </div>
+
+        </div>
+        <div><br></div>
+        <div id="loc2" style=" display: block;
                     border-color: #ffffff; 
                     border-radius: 5px 5px 5px 5px; 
                     box-shadow: 5px 5px 1px rgb(146, 144, 144); 
@@ -201,116 +202,116 @@
                     font-weight: bold; 
                     padding-top: 10px; 
                     width: 100%; height: 40%; 
-                    background-color: rgba(255, 255, 255, 0.5); 
-                    border: solid 1px;">
-            <div style="border-bottom: solid 1px;">Party</div>
-            <div style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">Locatie2</div>
-            <div>
-              <span id="date" style="padding-left:35px;padding-right:125px;">🗓</span>
-              <span id="time" style="padding-right:80px;">🕓</span>
-            </div>
-            <div>
-              <span id="dateValue" style="padding-right:50px;">24.08.2019</span>
-              <span id="timeValue" style="width: 10px;word-wrap: break-word;">16:00 - fara limita</span>
-            </div>
-
-            <div style="display: inline-block;border-style: solid;border-width: 1px; border-color: #000000; width:100%; height: 45%;
-              box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.2);">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.612906546476!2d26.093712315311667!3d44.44110200914253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff409bd2d6d9%3A0x24e1439c27394d92!2sAth%C3%A9n%C3%A9e+Palace+Hilton+Bucharest!5e0!3m2!1sro!2sro!4v1559203417463!5m2!1sro!2sro"
-                width="100%" height="85%" frameborder="0" style="border:0" allowfullscreen></iframe>
-            
-          </div>
-            <button class="navigate">Navigheaza</button>
-          </div>
-
-
-
-        </div>
-        <div id="purpose">
-
-        </div>
-
-      </div>
-      <!--end location description-->
-
-
-      <div id="subscribeToEvent" style="text-align: center;  padding-top: 100px;">
-        <div class="eventName eventPurposeName">
-          Subscribe
-        </div>
-
-        <div style="color: rgb(158, 154, 154); 
-          font-family: Arial, Helvetica, sans-serif; 
-          font-size: 1em;
-          padding-bottom: 20px;">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua
-
-
+                    background-color: rgba(255, 255, 255, 0.8); 
+                    ">
+          <div>Petrecerea</div>
+          <div style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">Restaurant Elisabeta</div>
           <div>
-            <br>
-
-            <div class="dropdown">
-
-              <button class="dropbtn" onclick="showPersons();">Numar de persoane</button>
-              <div class="dropdown-content">
-                <a href="#1" onclick="setPersons(1)">1</a>
-                <a href="#2" onclick="setPersons(2)">2</a>
-                <a href="#3" onclick="setPersons(3)">3</a>
-                <a href="#4" onclick="setPersons(4)">4</a>
-                <a href="#5" onclick="setPersons(5)">5</a>
-                <a href="#6" onclick="setPersons(6)">6</a>
-                <a href="#7" onclick="setPersons(7)">7</a>
-                <a href="#8" onclick="setPersons(8)">8</a>
-              </div>
-            </div>
-            <br>
-            <input id="noOfSelPers" type="text" disabled style="padding: 10px; text-align: center; width: 10px;"
-              value=0>
-
+            <span id="date" style="padding-right:90px;">🗓</span>
+            <span id="time">🕓</span>
+          </div>
+          <div>
+            <span id="dateValue" style="padding-right:65px;">24.08.2019</span>
+            <span id="timeValue" style="padding-right:35px;">16:00</span>
           </div>
 
+          <div style="display: inline-block; width:100%; height: 45%;">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.933101296157!2d26.091893615897224!3d44.43453447910222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff43cdd9a779%3A0xc9f16c8255ac5b2c!2sRestaurant+Elisabeta!5e0!3m2!1sro!2sro!4v1559376879992!5m2!1sro!2sro"
+              width="90%" height="60%" style="border: solid 1px black;" frameborder="0" allowfullscreen></iframe>
 
-
+          </div>
+          <button  onclick="window.open('https://goo.gl/maps/N8fbexS1JxEkoj4o8', '_blank');" class="navigate">Navigheaza</button>
+          <br>
         </div>
 
 
-        <div style="display: block; position: relative;">
-
-          <textarea id="mentions" style="border-color: crimsom; width:400px; height:300px;"
-            placeholder=" Vrei sa ne transmiti ceva"></textarea>
-        </div>
-        <br><br>
-        <div id="confirmParticipationBtn">
-          <button
-            style="outline:none; width: 150px; height: 30px; color: #ffffff; background-color: rgb(238, 16, 101); border-radius: 10px ;border-color: rgb(238, 16, 101);">Da,
-            confirm prezenta</button>
-        </div>
-        <br>
-        <div id="rejectParticipationBtn">
-          <button
-            style="outline:none; width: 150px; height: 30px; color: #ffffff;background-color: #000000;border-radius: 10px; border-color: #49484828;">Nu
-            pot sa particip</button>
-        </div>
-
-        <!--start footer-->
-        <div id="footerEvent">
-          Yo &#9825; Yo
-          <div style="font-family:'Courier New', Courier, monospace; font-size: 0.3em;">Multumim!</div>
-        </div>
-        <!--end footer-->
 
       </div>
-      <!--end subscribe to event-->
+      <div id="purpose">
 
-
-
-
+      </div>
 
     </div>
 
 
+
+
+
+
+
+
+
+
+    <div id="subscribeToEvent">
+      <div class="eventName eventPurposeName">
+        <br>
+        Confirmare
+      </div>
+
+      <div style="color: rgb(158, 154, 154); 
+        font-family: Arial, Helvetica, sans-serif; 
+        font-size: 1em;
+        padding-bottom: 20px;">
+        Te asteptam cu drag!
+        <br>Completeaza formularul de mai jos pentru a ne anunta decizia ta.
+
+
+        <div>
+          <br>
+
+          <div class="dropdown">
+
+            <button class="dropbtn" onclick="showPersons();">Numar de persoane</button>
+            <div class="dropdown-content">
+              <a href="#1" onclick="setPersons(1)">1</a>
+              <a href="#2" onclick="setPersons(2)">2</a>
+              <a href="#3" onclick="setPersons(3)">3</a>
+              <a href="#4" onclick="setPersons(4)">4</a>
+              <a href="#5" onclick="setPersons(5)">5</a>
+              <a href="#6" onclick="setPersons(6)">6</a>
+              <a href="#7" onclick="setPersons(7)">7</a>
+              <a href="#8" onclick="setPersons(8)">8</a>
+            </div>
+          </div>
+          <br>
+          <input id="noOfSelPers" type="text" disabled style="padding: 10px; text-align: center; width: 10px;" value=0>
+
+        </div>
+
+
+
+      </div>
+
+
+      <div style="display: block; position: relative;">
+
+        <textarea id="mentions" style="border-color: crimsom; width:300px; height:300px;"
+          placeholder=" Vrei sa ne transmiti ceva?"></textarea>
+      </div>
+      <br><br>
+      <div id="confirmParticipationBtn">
+        <button onclick="sendConfirmEmail();"
+          style="outline:none; width: 150px; height: 30px; color: #ffffff; background-color: rgb(238, 16, 101); border-radius: 10px ;border-color: rgb(238, 16, 101);">Da,
+          confirm prezenta</button>
+      </div>
+      <br>
+      <div id="rejectParticipationBtn">
+        <button onclick="sendRejectEmail();"
+          style="outline:none; width: 150px; height: 30px; color: #ffffff;background-color: #000000;border-radius: 10px; border-color: #49484828;">Nu
+          pot sa particip</button>
+      </div>
+
+      <!--start footer-->
+      <div id="footerEvent">
+        Alina &#9825; Claudiu
+        <br>&#9825;Adina - Maria&#9825;
+        <div style="font-family:'Courier New', Courier, monospace; font-size: 0.5em;">Multumim!</div>
+      </div>
+      <!--end footer-->
+
+    </div>
+    <!--end subscribe to event-->
 
 
 
