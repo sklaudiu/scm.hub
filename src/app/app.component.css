@@ -132,7 +132,11 @@ select{
   text-align: center;
 }
   #timeLeft{
-      background-color: rgba(252, 8, 101, 0.5);
+      /*background-color: rgba(252, 8, 101, 0.5);*/
+      background-image:linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)),url(/src/assets/images/timeleftbg.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
       display:block;
       
   }
@@ -168,13 +172,15 @@ select{
 }
 
 .eventName{
-    
-
-    font-family: Alexander;
+    display: block;
+    font-family: bresley;
     font-size: 3em;
     font-style: bold;
-    color: #ffffff;
+    color: rgba(252, 8, 101, 0.5);
+    padding-top: 20px;
 }
+
+
 
 .eventPurposeName{
     font-weight: bold;
@@ -188,9 +194,9 @@ select{
 #locationDescription{
     border:none;
     background-position: bottom; 
-    background-image: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)), url(/src/assets/images/locationBg.jpg);
+    background-image: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)), url(/src/assets/images/locationBg.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
 
 }
 
@@ -202,13 +208,16 @@ button:hover{
 /* Dropdown Button */
 .dropbtn {
   position: relative;
-  background-color: #4CAF50;
-  color: white;
+  /*background-image: linear-gradient(#ffffff, rgb(248, 66, 127));*/
+  color: rgb(78, 77, 77);
+  background-color: #ffffff;
+  font-family: "Charlotte Sweet Dafont";
   font-size: 16px;
-  border: none;
+  font-weight: bold;
+  border: solid 0.5px;
   outline: none;
   border-radius: 10px 10px 10px 10px ;
-  padding: 20px;
+  padding: 2px;
   width: 100%;
 }
 
@@ -219,7 +228,7 @@ button:hover{
   position: relative;
   display: block;
   text-align: center;
-  background-color: #4CAF50;
+
   border-radius: 10px 10px 10px 10px ;
   
   
@@ -245,17 +254,17 @@ button:hover{
 }
 
 .dropdown-content a:nth-child(even) {
-  background-color: rgba(6, 247, 18, 0.2);
+  background-color: rgba(248, 66, 127, 0.2);
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: rgb(76, 175, 80);}
+.dropdown-content a:hover {background-color: rgb(248, 66, 127);}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .dropbtn {background-color: rgb(248, 66, 127); color: #ffffff;}
     
 
 .navigate{
@@ -310,3 +319,19 @@ button:hover{
     font-family: Charlotte Sweet Dafont;
     src: url(/src/assets/fonts/Charlotte\ Sweet\ Dafont.otf);
   }
+
+  @font-face {
+    font-family: bresley;
+    src: url(/src/assets/fonts/Bresley.ttf);
+  }
+
+  @font-face {
+    font-family: Alexander;
+    src: url(/src/assets/fonts/Alexander\ Lettering.ttf);
+  }
+
+  @font-face {
+    font-family: Rockness;
+    src: url(/src/assets/fonts/Rockness.ttf);
+  }
+
