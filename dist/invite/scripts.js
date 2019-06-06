@@ -44,7 +44,19 @@ function acnowledgeViewedMsg() {
 }
 
 function setSize() {
-    document.getElementById("timeLeft").style.height = (window.innerHeight + 20) + "px";
+    document.getElementById("timeLeft").style.height = (window.innerHeight) + "px";
+    if (window.innerHeight <= 400){
+        document.getElementById("evnamespace1").style.display = "none";
+        document.getElementById("evnamespace2").style.display = "none";
+        document.getElementById("evnamespace3").style.display = "none";
+        document.getElementById("goNext").style.display = "none";
+    }
+    else{
+        document.getElementById("evnamespace1").style.display = "inline";
+        document.getElementById("evnamespace2").style.display = "inline";
+        document.getElementById("evnamespace3").style.display = "inline";
+        document.getElementById("goNext").style.display = "inline";
+    }
     document.body.style.margin = "0";
     document.body.style.width = "100%";
     //document.getElementById("invitePresentation").style.height =(window.innerHeight+40) + "px";
