@@ -1,7 +1,5 @@
 window.setInterval((function () {
-    var start = Date;
     var currDate = new Date();
-
     var end = new Date(2019, 07, 24, 12, 00, 00, 00);
 
     if (end >= currDate) {
@@ -52,10 +50,10 @@ function setSize() {
         document.getElementById("goNext").style.display = "none";
     }
     else{
-        document.getElementById("evnamespace1").style.display = "inline";
-        document.getElementById("evnamespace2").style.display = "inline";
-        document.getElementById("evnamespace3").style.display = "inline";
-        document.getElementById("goNext").style.display = "inline";
+        //document.getElementById("evnamespace1").style.display = "block";
+        document.getElementById("evnamespace2").style.display = "block";
+        document.getElementById("evnamespace3").style.display = "block";
+        document.getElementById("goNext").style.display = "block";
     }
     document.body.style.margin = "0";
     document.body.style.width = "100%";
