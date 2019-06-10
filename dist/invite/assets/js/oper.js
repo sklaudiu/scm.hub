@@ -28,6 +28,7 @@ document.addEventListener("click", function (event) {
 
 
 function acnowledgeViewedMsg() {
+
     if (document.cookie.includes("refid")) {
         var isSent = false;
         var xhttp = new XMLHttpRequest();
@@ -35,7 +36,7 @@ function acnowledgeViewedMsg() {
             if (this.readyState == 4 && this.status == 200) {
             }
         };
-        xhttp.open("GET", "/confirm_view.php", false);
+        xhttp.open("GET", "confirm_view.php", true);
         xhttp.send();
         if (xhttp.responseText.length > 2) alert(xhttp.responseText);
     }
@@ -98,7 +99,7 @@ function sendConfirmEmail() {
     if (document.getElementById("mentions").value.length != 0)
         paramsConf += "&msg=" + document.getElementById("mentions").value;
 
-    xhttp.open("POST", "/sendConfMail.php", true);
+    xhttp.open("POST", "sendConfMail.php", false);
 
     xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xhttp.send(paramsConf);
@@ -121,7 +122,7 @@ function sendRejectEmail() {
     if (document.getElementById("mentions").value.length != 0)
         paramsConf += "&msg=" + document.getElementById("mentions").value;
 
-    xhttp.open("POST", "/sendConfMail.php", true);
+    xhttp.open("POST", "sendConfMail.php", true);
     xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xhttp.send(paramsConf);
 }
