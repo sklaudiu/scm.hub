@@ -60,7 +60,7 @@ try {
         if($confirmed==0) $rejected =1;
 		
 		//update in DB status
-    $query = "update invites set confirmed = " . $confirmed .", rejected = " . $rejected . ",invitee_message='".$msg."', action_timestamp = current_timestamp where id = " . $userid;
+    $query = "update invites set confirmed = " . $confirmed .", rejected = " . $rejected . ",NrPersoane=". $nrPers .",invitee_message='".$msg."', action_timestamp = current_timestamp where id = " . $userid;
     if ($link->query($query) == false) {
         mail("stnclaudiu@yahoo.com", "Eroare update SQL ", "Query: ".$query."\n".$link->error, $headers, "-f " . $from);
         
