@@ -4,9 +4,15 @@ window.setInterval((function () {
 
     if (end >= currDate) {
         document.getElementById('days').innerText = Math.floor((end - currDate) / (1000 * 60 * 60 * 24));
-        document.getElementById('hours').innerText = 23 - currDate.getHours();
+        if (currDate.getDay == 24 && currDate.getMonth == 8) document.getElementById('hours').innerText = 12 - currDate.getHours();
+        else {document.getElementById('hours').innerText = 23 - currDate.getHours();
         document.getElementById('minutes').innerText = 59 - currDate.getMinutes();
         document.getElementById('seconds').innerText = 59 - currDate.getSeconds();
+    }else {
+        document.getElementById('days').innerText = 0;
+        document.getElementById('hours').innerText = 0;
+        document.getElementById('minutes').innerText =0;
+        document.getElementById('seconds').innerText = 0;
     }
 
 }
